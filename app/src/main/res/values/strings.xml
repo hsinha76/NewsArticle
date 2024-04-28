@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NewsArticle</string>
+    <string name="sort_news_by">Sort news by</string>
+    <string name="new_to_old">New to Old</string>
+    <string name="something_went_wrong_pls_try_again">Something went wrong, Pls try again.</string>
+    <string name="title">Title</string>
+    <string name="source">Source</string>
+    <string name="published_at">Published at</string>
+    <string name="old_to_new">Old to New</string>
+
+    <string-array name="sort_by">
+        <item>New to Old</item>
+        <item>Old to New</item>
+    </string-array>
+
+</resources>

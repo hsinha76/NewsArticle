@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "431566916547",
+    "project_id": "newsarticle---moengage",
+    "storage_bucket": "newsarticle---moengage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431566916547:android:56feb64c16b4ceac7e4b76",
+        "android_client_info": {
+          "package_name": "com.hsdroid.newsarticle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbKwCWa55nkFQnNb1cJSxhbBTN9CuwEYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

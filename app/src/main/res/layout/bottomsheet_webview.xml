@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:padding="4dp"
+            android:src="@drawable/baseline_close_24"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/view_link_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:layout_toStartOf="@id/img_copy"
+            android:layout_toEndOf="@id/img_close"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/tv_url"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="https://www.google.com/" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_copy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:padding="4dp"
+            android:src="@drawable/baseline_content_copy_24"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/secondary">
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</RelativeLayout>
